@@ -2,6 +2,11 @@
 After running ./run2.csh in /trio_flow/, the target lib file is generated in:
 /home/C00535644/projects/liberatews/trio_flow/char_gpdk_NOM/ldb.ldb.4.gz/tt_1p1v_25c/LIBS/DFFX1::gpdk_tt_1p1v_25c.lib
 
+The netlist to be used are in /home/C00535644/projects/gpdk045/gsclib045/cdl
+Copy the .cdl of interest from the gsclib045.cdl then paste it into /home/C00535644/projects/liberatews/trio_flow/gpdk/netlists as .sp.
+Once you have the .sp inside /netlists/, create a template file in /home/C00535644/projects/liberatews/trio_flow/gpdk/templates.
+
+
 Next steps:
 1) Check out the DFFX1.sp netlist in /gpdk/netlists/
 2) Work on varying the dimensions of W and L in the netlist. Don't go crazy, switch between three paramters.
