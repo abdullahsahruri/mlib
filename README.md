@@ -8,10 +8,10 @@ Next steps:
 3) Take into account the Wmin-Wmax and Lmin-Lmax that is in the netlist. Lmin and Wmin being the minimum W and L dimensions provided by the foundry (gpdk).
 4) The out from the ML model should give the following:
 
-| Corners     | Setup_rising | Setup_rising | Hold_rising | Hold_falling | CLK-Q Delay | W           | L           |
-| :---------: |:------------:|:------------:|:-----------:|:------------:|:-----------:|:-----------:|:-----------:|
-| Conrer #1   | float        | float        | float       | float        | float       | float       | float       |
-| Conrer #2   | float        | float        | float       | float        | float       | float       | float       |
-| ...         | float        | float        | float       | float        | float       | float       | float       |
-| ...         | float        | float        | float       | float        | float       | float       | float       |
-| Conrer #N   | float        | float        | float       | float        | float       | float       | float       |
+| Corners     | Setup_rising | Setup_rising | Hold_rising | Hold_falling | CLK-Q Delay | W (of every MOS) | L (of every MOS) |
+| :---------: |:------------:|:------------:|:-----------:|:------------:|:-----------:|:----------------:|:----------------:|
+| Conrer #1   | float        | float        | float       | float        | float       | float            | float            |
+| Conrer #2   | float        | float        | float       | float        | float       | float            | float            |
+| ...         | float        | float        | float       | float        | float       | float            | float            |
+| ...         | float        | float        | float       | float        | float       | float            | float            |
+| Conrer #N   | float        | float        | float       | float        | float       | float            | float            |
