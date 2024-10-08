@@ -1,0 +1,34 @@
+# Random Width Variation Netlist Generator
+
+## Overview
+This script generates netlists with varying MOSFET widths based on a specified subset of width values. The widths of all MOSFETs in the netlist are randomly selected from the subset for each generated netlist.
+
+## Usage
+
+1. **Requirements**:
+    - Python 3.x
+
+2. **Running the Script**:
+    - Make the script executable:
+      ```bash
+      chmod +x generate_netlists.py
+      ```
+    - Run the script:
+      ```bash
+      ./generate_netlists.py
+      ```
+    - The script will generate 10 `.sp` files by default. Each file will have randomly varied MOSFET widths.
+
+3. **Customization**:
+    - You can modify the subset of widths in the script by changing the `widths` array.
+    - Adjust the number of netlists to generate by modifying the `num_files` argument in the `generate_random_widths_netlists()` function call.
+
+## Output
+The generated netlists are named as `DFFX1_0.sp`, `DFFX1_1.sp`, ..., `DFFX1_9.sp`, each containing randomly assigned MOSFET widths.
+
+## Example
+
+Example command to run the script:
+```bash
+./generate_netlists.py
+
